@@ -5,30 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>with blur effect</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="landing.css" />
   </head>
   <body>
-    <header class="showcase">
-      <div class="content">
-        <h1>Foodgram</h1>
-        <h3>Xtend your cravings</h3>
-        <div class="title">Spread your magic!!</div>
-        <div class="text">
-          <input type="text" placeholder="Username" /><br />
-          <input type="text" placeholder="Email" /><br />
-          <input type="text" placeholder="Password" /><br />
-          <a href="" target="_blank" class="forgot_password">Forgot Password?</a
-          ><br />
-          <a href="" class="button">SUBMIT</a>
+    <div class="topnav">
+
+      <div class="topnav-right">
+        <a class="active" href="#home" style="color:  black;">Home</a>
+        <a href="#about" style="color: black;">About</a>
+        <a href="#search" style="color:  black;">Categories</a>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+        <button onclick="document.getElementById('id0').style.display='block'" style="width:auto;">Login</button>
+         
+      </div>
+    </div>
+    <div id="id01" class="modal">
+      
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
         </div>
+      </form>
+    </div>
+    
+    
+    <div id="id0" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id0').style.display='none'" class="close1" title="Close Modal">&times;</span>
+         
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text1" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password1" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id0').style.display='none'" class="cancelbtn1">Cancel</button>
+          <span class="psw"> <a href="#">Forgot password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    
+    <header class="showcase" id="home">
+      <div class="content">
+        <h2 class="h">Foodgram</h2>
+        <h3>Xtend your cravings</h3>
+        
+        <div class="containe">
+          <h2 class="titl">
+            <span class="title-word title-word-1">Spread</span>
+            <span class="title-word title-word-2">your</span>
+            <span class="title-word title-word-3">magic</span>
+            <span class="title-word title-word-4">!!</span>
+          </h2>
+        </div>
+        
       </div>
     </header>
 
-    <section class="services">
+    <section class="about bg-light" id="about">
+      <div class="container">
+        <div class="grid-2">
+          
+          <div>
+            <h3>About Us</h3>
+            <p>
+              <b>Welcome!</b> we're overjoyed to have you here. Foodie's created the website and app Foodgram, which is used to share your recipes and meals.We enjoy preparing and eating food for a variety of reasons. We are all aware that cooking helps us live healthier lives and brings happiness to both our bodies and minds. Foodgram is all about sharing your culinary creations, emotions, and experiences. Additionally, foodgram gives you the opportunity to use our medium to show off your talent to a global audience. We place a focus on global user-generated content, recipes, and films. Foodgram is the go-to source for the most recent recipe trends and it makes you drool.
+              <br>
+              <b>Foodgram purpose:</b>
+              <br>
+              The purpose of foodgram is to create a dedicated platform for people who love to cook. Foodgram allows people to post dishes and encourages to show off recipes to the world.
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="search">
       <div class="container grid-3 center">
         <div>
           <h3>Categories</h3>
-          <p>
+          <p class="pc">
             <a href="" class="recipes">Breakfast recipes</a><br />
             <a href="" class="recipes">Lunch recipes</a><br />
             <a href="" class="recipes">Brunch recipes</a><br />
@@ -40,7 +133,7 @@
         </div>
         <div>
           <h3>Cookbook</h3>
-          <p>
+          <p class="pc1">
             <a href="" class="recipes">Ingredients</a><br />
             <a href="" class="recipes">Kitchen tips</a><br />
             <a href="" class="recipes">Diet chart</a><br />
@@ -48,37 +141,48 @@
             <a href="" class="recipes">Features</a><br />
           </p>
         </div>
-        <div>
+        <div class="im">
           <h3>Follow Us</h3>
-          <p>
-            <a href="" class="media">Facebook</a><br />
-            <a href="" class="media">Instagram</a><br />
-            <a href="" class="media">Youtube</a><br />
-            <a href="" class="media">Reddit</a><br />
+          <p class="pc2">
+          
+           <img src="land.jpg" width="50%" height="20%">
           </p>
+          <p style="color: white;">Contact Us :+9100000000</p>
+      
+          <p style="color: white;">Email:foodgram@gmail.com</p>
         </div>
+       
       </div>
+     
     </section>
 
-    <section class="about bg-light">
-      <div class="container">
-        <div class="grid-2">
-          <div class="center">
-          </div>
-          <div>
-            <h3>About Us</h3>
-            <p>
-              Foodgram is a social recipe-sharing website created with the idea
-              of helping each other like yourself, by presenting mind-blowing
-              food recipes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
-    <footer class="center bg-dark">
+    <footer class="dark">
       <p>Copyright &copy; All rights Reserved</p>
     </footer>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id0');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+      
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
   </body>
 </html>
