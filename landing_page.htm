@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>with blur effect</title>
+    <title>Foodgram</title>
     <link rel="stylesheet" href="landing.css" />
   </head>
   <body>
@@ -21,7 +21,7 @@
     </div>
     <div id="id01" class="modal">
       
-      <form class="modal-content" action="/action_page.php">
+      <form class="modal-content animate" action="/action_page.php">
         <div class="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
@@ -33,10 +33,10 @@
           <input type="password" placeholder="Enter Password" name="psw" required>
     
           <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
           
           <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            <input type="checkbox" checked="checked" name="remember" style="color:black; margin-bottom:15px;" class="remember"> Remember me
           </label>
     
           <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
@@ -59,6 +59,8 @@
         </div>
     
         <div class="container">
+          <h1>Log in</h1>
+          <p>Please fill the below form</p>
           <label for="uname"><b>Username</b></label>
           <input type="text1" placeholder="Enter Username" name="uname" required>
     
@@ -67,7 +69,7 @@
             
           <button type="submit">Login</button>
           <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" class="remember">Remember me
           </label>
         </div>
     
@@ -81,16 +83,16 @@
     
     <header class="showcase" id="home">
       <div class="content">
-        <h2 class="h">Foodgram</h2>
-        <h3>Xtend your cravings</h3>
         
         <div class="containe">
           <h2 class="titl">
-            <span class="title-word title-word-1">Spread</span>
-            <span class="title-word title-word-2">your</span>
-            <span class="title-word title-word-3">magic</span>
-            <span class="title-word title-word-4">!!</span>
+            <span class="title-word title-word-1"><i>Spread</i><span>
+            <span class="title-word title-word-2"><i>your</i></span>
+            <span class="title-word title-word-3"><i>magic</i></span>
+            <span class="title-word title-word-4"><i>!!</i></span>
           </h2>
+          <h1 class="h">Foodgram</h1>
+          <h3>Extend your cravings</h3>
         </div>
         
       </div>
@@ -101,8 +103,8 @@
         <div class="grid-2">
           
           <div>
-            <h3>About Us</h3>
-            <p>
+            <h3 style="text-align: center;">About Us</h3>
+            <p style="text-align:center ;">
               <b>Welcome!</b> we're overjoyed to have you here. Foodie's created the website and app Foodgram, which is used to share your recipes and meals.We enjoy preparing and eating food for a variety of reasons. We are all aware that cooking helps us live healthier lives and brings happiness to both our bodies and minds. Foodgram is all about sharing your culinary creations, emotions, and experiences. Additionally, foodgram gives you the opportunity to use our medium to show off your talent to a global audience. We place a focus on global user-generated content, recipes, and films. Foodgram is the go-to source for the most recent recipe trends and it makes you drool.
               <br>
               <b>Foodgram purpose:</b>
@@ -132,7 +134,7 @@
           </p>
         </div>
         <div>
-          <h3>Cookbook</h3>
+          <h3 style="padding-right:10% ;">Cookbook</h3>
           <p class="pc1">
             <a href="" class="recipes">Ingredients</a><br />
             <a href="" class="recipes">Kitchen tips</a><br />
@@ -144,12 +146,19 @@
         <div class="im">
           <h3>Follow Us</h3>
           <p class="pc2">
-          
-           <img src="land.jpg" width="50%" height="20%">
+            <a href="#facebook" target="_blank" class="social-img">
+              <img src="https://i4.sdlcdn.com/img/footer/facebook@4x.png" alt="Foodgram Facebook Page" class="social-img" height="15%">
+            </a>
+            <a href="#twitter" target="_blank" class="social-img">
+              <img src="https://i1.sdlcdn.com/img/footer/twitter@4x.png" alt="Foodgram Twitter Page" class="social-img" height="15%">
+            </a>
+            <a href="#Instagram" target="_blank" class="social-img">
+              <img src="https://i4.sdlcdn.com/img/footer/instagram@4x.png" alt="Foodgram Instagram Page" class="social-img" height="15%">
+            </a>
           </p>
-          <p style="color: white;">Contact Us :+9100000000</p>
+          <p style="color: white; padding-top: 10%;">Contact Us: +9100000000</p>
       
-          <p style="color: white;">Email:foodgram@gmail.com</p>
+          <p style="color: white;">Email: foodgram@gmail.com</p>
         </div>
        
       </div>
@@ -159,7 +168,7 @@
     
 
     <footer class="dark">
-      <p>Copyright &copy; All rights Reserved</p>
+      <p>Copyright &copy; All rights reserved</p>
     </footer>
     <script>
       // Get the modal
