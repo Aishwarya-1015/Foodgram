@@ -6,6 +6,7 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   
+  /* background image allignment */
   .showcase::after {
     content: "";
     height: 100vh;
@@ -15,20 +16,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    /* filter: blur(9px);
-    -webkit-filter: blur(9px);
-    transition: all 1000ms; */
   }
-  
-  /* .showcase:hover::after {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-  } */
-  
-  /* .showcase:hover .content {
-      filter: blur(2px);
-      -webkit-filter: blur(2px);
-  } */
   
   .content {
     position: absolute;
@@ -158,10 +146,10 @@ body {
     text-transform: capitalize;
   }
   
-  .topnav a.active {
+  /* .topnav a.active {
     
   
-  }
+  } */
   
   .topnav-right {
     float: right;
@@ -173,8 +161,13 @@ body {
     color: #000;
   }
   .h{
-    font-size: 90px;
+    font-size: 120px;
     padding-bottom: 15%;
+    float: right;
+    margin-right: -180px;
+  }
+  .slogan {
+    margin-right: -374px;
   }
   h3{
     font-size: 30px;
@@ -384,27 +377,27 @@ body {
   }
   
   .title-word-1 {
-    --color-1: #DF8453;
-    --color-2: #3D8DAE;
-    --color-3: #E4A9A8;
+    --color-1: #ffcc92;
+    --color-2: #a2fac1;
+    --color-3: #b3fd98;
   }
   
   .title-word-2 {
-    --color-1: #DBAD4A;
-    --color-2: #ACCFCB;
-    --color-3: #17494D;
+    --color-1: #e6e650;
+    --color-2: #becfac;
+    --color-3: #ffc250;
   }
   
   .title-word-3 {
-    --color-1: #ACCFCB;
+    --color-1: #56f1df;
     --color-2: #E4A9A8;
-    --color-3: #ACCFCB;
+    --color-3: #a4ffbe;
   }
   
   .title-word-4 {
-    --color-1: #3D8DAE;
-    --color-2: #DF8453;
-    --color-3: #E4A9A8;
+    --color-1: #ff965d;
+    --color-2: #f0f369;
+    --color-3: #f3bf4f;
   }
   
   @keyframes color-animation {
